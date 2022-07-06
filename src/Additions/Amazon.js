@@ -31,7 +31,6 @@ const Amazon = (props) => {
                             </li>
 
                             <li className='minili'>Home</li>
-                            <li className='minili'>Home</li>
                         </ul>
                     </header>
                 </div>
