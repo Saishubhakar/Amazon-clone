@@ -22,8 +22,8 @@ const Amazon = (props) => {
                                 <div className='options' id='options'>
 
                                     <div className="form-check form-switch" id='darkmode'>
-                                        <input class="form-check-input" onClick={props.background} type="checkbox" id="flexSwitchCheckDefault" />
-                                        <label class="form-check-label" htmlFor="flexSwitchCheckDefault">Darkmode</label>
+                                        <input className="form-check-input" onClick={props.background} type="checkbox" id="flexSwitchCheckDefault" />
+                                        <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Darkmode</label>
                                     </div>
 
                                 </div>
@@ -40,38 +40,38 @@ const Amazon = (props) => {
 
                 <div className='outest'>
                     <div className='amazon'>
-                        <div id="carouselExampleCaptions" class="carousel slide headmaster" data-bs-ride="false">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <div id="carouselExampleCaptions" className="carousel slide headmaster" data-bs-ride="false">
+                            <div className="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active slide1">
-                                    <img src="" class="d-block w-100" alt="" />
-                                    <div class="carousel-caption d-none d-md-block">
+                            <div className="carousel-inner">
+                                <div className="carousel-item active slide1">
+                                    <img src="" className="d-block w-100" alt="" />
+                                    <div className="carousel-caption d-none d-md-block">
                                     </div>
                                 </div>
 
-                                <div class="carousel-item slide2">
-                                    <img src="" class="d-block w-100" alt="" />
-                                    <div class="carousel-caption d-none d-md-block">
+                                <div className="carousel-item slide2">
+                                    <img src="" className="d-block w-100" alt="" />
+                                    <div className="carousel-caption d-none d-md-block">
                                     </div>
                                 </div>
-                                <div class="carousel-item slide3">
-                                    <img src="" class="d-block w-100" />
-                                    <div class="carousel-caption d-none d-md-block">
+                                <div className="carousel-item slide3">
+                                    <img src="" className="d-block w-100" />
+                                    <div className="carousel-caption d-none d-md-block">
                                     </div>
                                 </div>
 
                             </div>
-                            <button id='prev' class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
+                            <button id='prev' className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Previous</span>
                             </button>
-                            <button id='next' class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
+                            <button id='next' className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span className="visually-hidden">Next</span>
                             </button>
                         </div>
                     </div>

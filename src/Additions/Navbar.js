@@ -6,7 +6,7 @@ const Navbar = (props) => {
             <div>
                 <nav className='nav'>
                     <a href='/'>
-                        <div class="logo" style = {{width: "10rem", height : "9vh"}}>
+                        <div className="logo" style = {{width: "10rem", height : "9.6vh"}}>
                         <img src=""  alt=""/>
                     </div>
                     </a>
@@ -19,8 +19,6 @@ const Navbar = (props) => {
                         <input className='input' id='input'></input>
                         <a className='button'><i className="fa fa-search" aria-hidden="true"></i></a>
                     </div>
-
-                    
 
                 </nav>
 

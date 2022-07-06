@@ -1,16 +1,16 @@
 /* From here are the sports images */
 #football {
-    background-image: url("https://images.unsplash.com/photo-1616514169928-a1e40c6f791c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c29jY2VyJTIwYmFsbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: url("Images/football.avif");
     background-size: 100% 100%;
 }
 
 #rugby {
-    background-image: url("https://images.unsplash.com/photo-1604689370687-930b15f59a79?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=872&q=80");
+    background-image: url("Images/Rugby.avif");
     background-size: 100% 100%;
 }
 
 #baseball {
-    background-image: url('https://images.unsplash.com/photo-1613446184948-b05f1c5cbbdb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGJhc2ViYWxsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+    background-image: url('Images/baseball.avif');
     background-size: 100% 100%;
 }
 
@@ -18,67 +18,67 @@
 /* From here are the electronics images */
 
 #laptop {
-    background-image: url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80");
+    background-image: url("Images/laptop.avif");
     background-size: 100% 100%;
 }
 
 #phone{
-    background-image: url("https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=773&q=80");
+    background-image: url("Images/iphone.avif");
     background-size: 100% 100%;
 }
 
 #headphones {
-    background-image: url("https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=901&q=80");
+    background-image: url("Images/Headphones.avif");
     background-size: 100% 100%;
 }
 
 /* From here are the school images */
 
 #bag {
-    background-image: url("https://images.unsplash.com/photo-1553062407-98eeb64c6a62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-image: url("Images/schoolBag.avif");
     background-size: 100% 100%;
 }
 
 #sharpie {
-    background-image: url("https://m.media-amazon.com/images/I/81ei74ZGYZL._AC_UL320_.jpg");
+    background-image: url("Images/Sharpie.jpg");
     background-size: 100% 100%;
 }
 
 #crayon{
-    background-image: url("https://images.unsplash.com/photo-1587586062323-836089e60d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y3JheW9uc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: url("Images/crayons.avif");
     background-size: 100% 100%;
 }
 
 /* From here are the general images */
 
 #shoes {
-    background-image: url("https://images.unsplash.com/photo-1460353581641-37baddab0fa2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8c2hvZXN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-image: url("Images/Shoes.avif");
     background-size: 100% 100%;
 }
 
 #watch {
-    background-image: url("https://images.unsplash.com/photo-1557531365-e8b22d93dbd0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fHdhdGNofGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: url("Images/Watch.avif");
     background-size: 100% 100%;
 }
 
 #tie {
-    background-image: url("https://images.unsplash.com/photo-1594938291221-94f18cbb5660?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NDV8fHRpZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: url("Images/tie.avif");
     background-size: 100% 100%;
 }
 
 /* From here are the general images */
 
 #treadmill{
-    background-image: url("https://images.unsplash.com/photo-1652364653960-1c23c208ef43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fHRyZWFkbWlsbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-image: url("Images/treadmill.avif");
     background-size: 100% 100%;
 }
 
 #twister {
-    background-image: url("https://m.media-amazon.com/images/I/71ukRBcTeLL._AC_UL320_.jpg");
+    background-image: url("Images/twister.jpg");
     background-size: 100% 100%;
 }
 
 #yogamat {
-    background-image: url("https://images.unsplash.com/photo-1592432678016-e910b452f9a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8eW9nYSUyMG1hdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60");
+    background-image: url("Images/yogamat.avif");
     background-size: 100% 100%;
 }

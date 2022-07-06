@@ -18,9 +18,6 @@ import Footer from './Additions/Footer';
 function App() {
 
 
-
-
-
   const background = () => {
     let imgcontainer = document.getElementById("imgcontainer");
 
