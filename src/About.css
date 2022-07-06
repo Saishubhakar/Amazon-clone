@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.aboutcontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.unsplash.com/photo-1488415032361-b7e238421f1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8bm9ydGhlcm4lMjBsaWdodHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    min-height: 87vh;
+    position: relative;
+}
+
+/* This is info but heading */
+
+.info {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 5px 0px;
+}
+
+/* info starts here */
+
+.personalInfo {
+    font-size: 1.15rem;
+    color: white;
+    width: 90vw;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+
+
+/* From here starts the icons css */
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+.icons ul {
+    display: flex;
+    justify-content: center;
+}
+
+.icons ul li {
+    list-style: none;
+    margin: 0px 15px;
+}
+
+.icons ul li i {
+    font-size: 2rem;
+    line-height: 9vh;
+    transition: 0.6s;
+    color: #000000;
+}
+
+
+
+.icons ul li a {
+    position: relative;
+    display: block;
+    width: 4vw;
+    height: 9vh;
+    background-color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.icons ul li a:hover {
+    transform: translate(0, -10px);
+}
+
+.icons ul li:nth-child(2) a:hover {
+    background-color: #424242;
+}
+
+.icons ul li:nth-child(3) a:hover {
+    background-color: #55acee;
+}
+
+.icons ul li:nth-child(4) a:hover {
+    background-color: #e4405f;
+}
+
+.icons ul li:nth-child(5) a:hover {
+    background-color: #0077B5;
+}
+
+.follow {
+    font-size: 1.4rem;
+    display: flex;
+    color: white;
+    align-items: center;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+
+.footer {
+    min-height: 12vh;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.footer p {
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+}
+
+.footer p:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:900px) {
+    .icons ul li a {
+        box-shadow: none;
+        min-width: 0vw;
+        height: 0vh;
+    }
+
+    .icons ul li i {
+        color: white;
+    }
+
+    .icons ul li a:hover {
+        transform: none;
+    }
+    
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
