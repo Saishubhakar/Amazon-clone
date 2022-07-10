@@ -1,8 +1,32 @@
 import React from 'react'
+import { useState } from 'react'
 
 const Amazon = (props) => {
 
+    const [Color, setColor] = useState({
+        color: "#000000",
+    })
 
+
+    const darkmode = () => {
+
+        let imgcontainer = document.getElementById("imgcontainer");
+        imgcontainer.classList.toggle("bodyvisible")
+        // These are the heading
+
+        if (Color.color === "#000000") {
+            setColor({
+                color: "white"
+            })
+
+        }
+        else {
+            setColor({
+                color: "#000000"
+            })
+        }
+
+    }
 
     return (
         <div>
@@ -22,7 +46,7 @@ const Amazon = (props) => {
                                 <div className='options' id='options'>
 
                                     <div className="form-check form-switch" id='darkmode'>
-                                        <input className="form-check-input" onClick={props.background} type="checkbox" id="flexSwitchCheckDefault" />
+                                        <input className="form-check-input" onClick={darkmode} type="checkbox" id="flexSwitchCheckDefault" />
                                         <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Darkmode</label>
                                     </div>
 
@@ -78,10 +102,10 @@ const Amazon = (props) => {
 
 
                 <div className='container'>
-                    <h1 className='heading' id='heading1'>Join the Sports Fun</h1>
+                    <h1 className='heading' id='heading1' style={Color}>Join the Sports Fun</h1>
                     <div className='container1 jojo'>
 
-                        <div className="card" id='card1' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -100,8 +124,9 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='rugby' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle1">Rugby Ball</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle1" style={Color}>Rugby Ball</h4>
+
+                                <div className='detail1' style={Color}>
                                     <p className="card-text" id='card-text'>Gilbert</p>
                                     <p className="card-text" id='card-text'>20% off</p>
                                     <p className="card-text" id='card-text'>36$</p>
@@ -109,7 +134,7 @@ const Amazon = (props) => {
                             </div>
                         </div>
 
-                        <div className="card" id='card2' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -128,8 +153,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='football' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle2">Soccer Ball</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle2" style={Color}>Soccer Ball</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Adidas</p>
                                     <p className="card-text">43% off</p>
                                     <p className="card-text">25.99$</p>
@@ -137,7 +162,7 @@ const Amazon = (props) => {
                             </div>
                         </div>
 
-                        <div className="card" id='card3' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -156,8 +181,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='baseball' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle3">Base Ball</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle3" style={Color}>Base Ball</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Rawlings</p>
                                     <p className="card-text">22% off</p>
                                     <p className="card-text">17.99$</p>
@@ -168,10 +193,10 @@ const Amazon = (props) => {
                     </div>
                     <br />
 
-                    <h1 className='heading' id='heading2'>Electronic Accessories</h1>
+                    <h1 className='heading' id='heading2' style={Color}>Electronic Accessories</h1>
                     <div className='container2 jojo'>
 
-                        <div className="card" id='card4' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -191,8 +216,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='laptop' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle4">Laptop</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle4" style={Color}>Laptop</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Dell</p>
                                     <p className="card-text">28% off</p>
                                     <p className="card-text">630$</p>
@@ -200,7 +225,7 @@ const Amazon = (props) => {
                             </div>
                         </div>
 
-                        <div className="card" id='card5' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -219,8 +244,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='phone' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle5">iPhone X</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle5" style={Color}>iPhone X</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Apple</p>
                                     <p className="card-text">20% off</p>
                                     <p className="card-text">600$</p>
@@ -228,7 +253,7 @@ const Amazon = (props) => {
                             </div>
                         </div>
 
-                        <div className="card" id='card6' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -248,8 +273,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='headphones' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle6">Headphones</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle6" style={Color}>Headphones</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Philips</p>
                                     <p className="card-text">12% off</p>
                                     <p className="card-text">260$</p>
@@ -260,12 +285,12 @@ const Amazon = (props) => {
                     </div>
                     <br />
 
-                    <h1 className='heading' id='heading3'>Back To School Offers</h1>
+                    <h1 className='heading' id='heading3' style={Color}>Back To School Offers</h1>
                     <div className='container3 jojo'>
 
 
 
-                        <div className="card" id='card7' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -283,8 +308,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='bag' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle7">School Bag</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle7" style={Color}>School Bag</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">F-Gear</p>
                                     <p className="card-text">56% off</p>
                                     <p className="card-text">60$</p>
@@ -292,7 +317,7 @@ const Amazon = (props) => {
                             </div>
                         </div>
 
-                        <div className="card" id='card8' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -311,8 +336,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='sharpie' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle8">Sharpies</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle8" style={Color}>Sharpies</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">S-Note</p>
                                     <p className="card-text">4% off</p>
                                     <p className="card-text">20$</p>
@@ -320,7 +345,7 @@ const Amazon = (props) => {
                             </div>
                         </div>
 
-                        <div className="card" id='card9' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -339,8 +364,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='crayon' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle9">Crayon pencils</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle9" style={Color}>Crayon pencils</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Camlin</p>
                                     <p className="card-text">13% off</p>
                                     <p className="card-text">40$</p>
@@ -350,10 +375,10 @@ const Amazon = (props) => {
 
                     </div>
 
-                    <h1 className='heading' id='heading4'>Grooming Men's Accessories</h1>
+                    <h1 className='heading' id='heading4' style={Color}>Grooming Men's Accessories</h1>
                     <div className='container4 jojo'>
 
-                        <div className="card" id='card10' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -372,8 +397,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='shoes' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle10">White-Force 3</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle10" style={Color}>White-Force 3</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Nike</p>
                                     <p className="card-text">22% off</p>
                                     <p className="card-text">260$</p>
@@ -381,7 +406,7 @@ const Amazon = (props) => {
                             </div>
                         </div>
 
-                        <div className="card" id='card11' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -400,8 +425,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='watch' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle11">Dial Analog Watch</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle11" style={Color}>Dial Analog Watch</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Tissot</p>
                                     <p className="card-text">27% off</p>
                                     <p className="card-text">280$</p>
@@ -409,7 +434,7 @@ const Amazon = (props) => {
                             </div>
                         </div>
 
-                        <div className="card" id='card12' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -428,8 +453,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='tie' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle12">Navy-Tie</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle12" style={Color}>Navy-Tie</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">BlackBerry</p>
                                     <p className="card-text">14% off</p>
                                     <p className="card-text">60$</p>
@@ -439,13 +464,13 @@ const Amazon = (props) => {
 
                     </div>
 
-                    <h1 className='heading' id='heading5'>Exercise Equipments at Home</h1>
+                    <h1 className='heading' id='heading5' style={Color}>Exercise Equipments at Home</h1>
                     <div className='container5 jojo'>
 
-                        <div className="card" id='card13' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
-                                    At Best Prices 
+                                    At Best Prices
                                     <span className="visually-visible"></span>
                                 </span>
                             </div>
@@ -459,8 +484,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='treadmill' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle13">TreadMill</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle13" style={Color}>TreadMill</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Adidas</p>
                                     <p className="card-text">60% off</p>
                                     <p className="card-text">560$</p>
@@ -468,7 +493,7 @@ const Amazon = (props) => {
                             </div>
                         </div>
 
-                        <div className="card" id='card14' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -487,8 +512,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='twister' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle14">Tummy Twister</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle14" style={Color}>Tummy Twister</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Sachdev</p>
                                     <p className="card-text">40% off</p>
                                     <p className="card-text">120$</p>
@@ -496,7 +521,7 @@ const Amazon = (props) => {
                             </div>
                         </div>
 
-                        <div className="card" id='card15' style={{ width: "18rem" }}>
+                        <div className="card" style={{ width: "18rem" }}>
 
                             <div className='badges'>
                                 <span className="position-absolute badge rounded-pill bg-danger">
@@ -515,8 +540,8 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='yogamat' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle15">Rugby Ball</h4>
-                                <div className='detail1'>
+                                <h4 className="card-title" id="cardtitle15" style={Color}>Rugby Ball</h4>
+                                <div className='detail1' style={Color}>
                                     <p className="card-text">Adidas</p>
                                     <p className="card-text">54% off</p>
                                     <p className="card-text">198$</p>
