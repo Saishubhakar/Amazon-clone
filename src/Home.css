@@ -21,7 +21,7 @@ body {
 }
 
 .nav {
-  height: 11.5vh;
+  height: 10vh;
   background-color: #000000;
   color: white;
   display: flex;
@@ -32,6 +32,14 @@ body {
   width: 100%;
 }
 
+
+.logobox{
+  height: 8vh;
+  width: 11vw;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 5px;
+}
 
 .logo {
   background-image: url("Images/logo.png");
@@ -49,12 +57,12 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
-  margin: 20px 0px;
+  margin: 18px 0px;
   align-items: center;
   width: 37vw;
-  line-height: 7vh;
+  line-height: 6vh;
   font-weight: 800;
-  font-size: 1.2rem;
+  font-size: 1.12rem;
 }
 
 .links a {
@@ -80,9 +88,9 @@ body {
 
 
 .mininav {
-  height: 5.7vh;
+  height: 5vh;
   width: 98.6vw;
-  background-color: #050541e5;
+  background-color: rgb(2, 110, 2);
 }
 
 .miniul {
@@ -95,9 +103,9 @@ body {
 
 .minili {
   list-style: none;
-  font-size: 1rem;
-  color: white;
+  color: #fff;
   cursor: pointer;
+  font-size: 0.95rem;
 }
 
 
@@ -478,6 +486,15 @@ p {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+
+  }
+
+  .shopbutton{
+    width: 50vw;
+  }
+
+  .detailbutton{
+    width: 50vw;
   }
 
   .detail2 {

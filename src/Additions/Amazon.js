@@ -124,7 +124,7 @@ const Amazon = (props) => {
                             </div>
                             <img src="..." id='rugby' className="card-img-top" alt="" />
                             <div className="card-body">
-                                <h4 className="card-title" id="cardtitle1" style={Color}>Rugby Ball</h4>
+                                <h4 className="card-title" style={Color}>Rugby Ball</h4>
 
                                 <div className='detail1' style={Color}>
                                     <p className="card-text" id='card-text'>Gilbert</p>

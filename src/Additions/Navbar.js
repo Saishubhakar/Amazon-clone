@@ -6,9 +6,11 @@ const Navbar = (props) => {
             <div>
                 <nav className='nav'>
                     <a href='/'>
-                        <div className="logo" style = {{width: "10rem", height : "9.6vh"}}>
-                        <img src=""  alt=""/>
-                    </div>
+                        <div className='logobox'>
+                            <div className="logo" style={{ width: "11vw", height: "8vh" }}>
+                                <img src="" alt="" />
+                            </div>
+                        </div>
                     </a>
                     <ul className='links' id='links'>
                         <li><a href='/'>Home</a></li>
