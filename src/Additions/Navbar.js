@@ -7,7 +7,7 @@ const Navbar = (props) => {
                 <nav className='nav'>
                     <a href='/'>
                         <div className='logobox'>
-                            <div className="logo" style={{ width: "11vw", height: "8vh" }}>
+                            <div className="logo">
                                 <img src="" alt="" />
                             </div>
                         </div>
